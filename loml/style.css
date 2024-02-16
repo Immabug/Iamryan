@@ -1,0 +1,22 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.container{height: 100vh; background: url(./images/image1.jpg); background-size: cover; position: relative; display: grid; place-items: center;}
+.container:before{position: absolute; left: 0; top: 0; display: block; background: rgba(0, 0, 0, .5);  height: 100%; width: 100%; content: '';}
+.container h1{  font-family: "Parisienne", cursive; font-size: 90px; color: #44B4FF; z-index: 1; top: 20px; position: relative; transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+
+@media only screen and (min-width: 1000px){
+    .container{background-size: contain;   background-repeat: repeat;   width: 38%; margin: 0 auto;}
+}
+
+@media only screen and (max-width: 1000px){
+    .container{background-size: contain;     width: 40%; margin: 0 auto;}
+}
+
+@media only screen and (max-width: 800px){
+    .container{background-size: cover;   width: 67%; margin: 0 auto;}}
+
+    @media only screen and (max-width: 800px){
+        .container{background-size: cover;   background-repeat: unset;   width: 100%; margin: 0 auto;}}
